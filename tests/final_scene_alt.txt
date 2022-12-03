@@ -1,0 +1,25 @@
+
+Material "WhiteMat" Diffuse (1, 1, 1) 1
+Material "RedMat" Diffuse (1, .15, .15) 1
+Material "GreenMat" Diffuse (.15, 1, .15) 1
+Material "BlueMat" Diffuse (.25, .25, .9) 1
+Material "GlassMat" Refractive (1, 1, 1) 1.4
+Material "MirrorMat" Reflective (1, 1, 1) 1
+
+PointLight "Light1" (-0.3, 0.95, 2.7) (.9, .9, .9)
+
+Plane "Floor" (0, -1, 0) (0, 1, 0) "WhiteMat"
+Plane "Roof" (0, 1, 0) (0, 1, 0) "WhiteMat"
+Plane "BackWall" (0, 0, -0.1) (0, 0, 1) "WhiteMat"
+
+Triangle "LeftWall" (-8, -6, -15) (0, 18, 5) (0, -6, 5)  "RedMat"
+
+Triangle "RightWall" (0, 18, 5) (8, -6, -15) (0, -6, 5)  "GreenMat"
+
+Sphere "WhiteBall" (0, -0.2, 4) 0.8 "WhiteMat"
+Sphere "SmallBall" (0, 0.8, 4) 0.2 "BlueMat"
+
+Sphere "GlassBall" (-0.45, 0, 3) 0.3 "GlassMat"
+Sphere "MirrorBall" (0.45, -0.6, 3) 0.3 "MirrorMat"
+
+
